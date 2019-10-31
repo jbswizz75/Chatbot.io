@@ -1,6 +1,6 @@
-Dist /
-Node_modules/
+dist /
+node_modules/
 .DS_Store
-Npm-debug.log
-Yarn-error.log
-Package-lock.json
+npm-debug.log
+yarn-error.log
+package-lock.json
