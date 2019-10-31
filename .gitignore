@@ -1,0 +1,6 @@
+Dist /
+Node_modules/
+.DS_Store
+Npm-debug.log
+Yarn-error.log
+Package-lock.json
