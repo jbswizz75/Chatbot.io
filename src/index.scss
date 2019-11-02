@@ -1,14 +1,10 @@
 $app-image-circle-90-height: 90px;
 $app-image-circle-90-width: 90px;
-$app-title-color: red;
 
 
 #app {
-    h1 {
-      color: $app-title-color;
-    }
-    .image-circle-90 {
-      width: $app-image-circle-90-width;
-      height: $app-image-circle-90-height;
-    }
+  .image-circle-90 {
+    width: $app-image-circle-90-width;
+    height: $app-image-circle-90-height;
+  }
 }
