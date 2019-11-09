@@ -1,10 +1,158 @@
-$app-image-circle-90-height: 90px;
-$app-image-circle-90-width: 90px;
+/* //---------- Variables ----------// */
+
+$app-image-circle-90-height: 90px!important;
+$app-image-circle-90-width: 90px!important;
+$app-message-text-color: red;
+$app-image-circle-60-width: 60px!important;
+$app-image-circle-60-height: 60px!important;
+$app-h-100-height: 100vh!important;
+$app-padding-top-10: 10px;
+$app-margin-auto: 0 auto;
+$app-middle-align-self: center;
+$app-middle-align-content: center;
+$app-middle-text-align: center;
+$app-text-red-1: rgb(231,76,60);
+$app-circle-border-radius: 100px;
+$app-gradient-blue-1-set-1: rgb(43,39,116);
+$app-gradient-blue-1-bg-set-2: linear-gradient(204deg, rgba(43,39,116,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+$app-gradient-gray-1-set-1: rgb(32,23,23);
+$app-gradient-gray-1-set-2: linear-gradient(34deg, rgba(32,23,23,1) 0%, rgba(20,20,20,1) 35%, rgba(41,38,38,1) 100%);
+$app-padding-20: 20px;
+$app-padding-10: 10px;
+$app-position-fixed: fixed;
+$app-float-right: right;
+$app-float-left: left;
+$app-margin-0: 0;
+$app-margin-10: 10px;
+$app-margin-left-20: 20px;
+$app-margin-right-0: 0;
+$app-white-color: #ffffff;
+$app-float-left: left;
+$app-message-after-clear-both: both;
+$app-message-after-display-table: table;
+$app-message-width-100-percent: 100%;
+$app-message-margin-right-20: 20px;
+$app-message-border-radius-50-percent: 50%;
+$app-message-max-width: 60px;
+
+/* //---------- Customize ----------// */
 
 
 #app {
-  .image-circle-90 {
+
+  /* ---------- Positions ---------- */
+
+  .middle{
+    align-content: $app-middle-align-content;
+    align-self: $app-middle-align-self;
+    text-align: $app-middle-text-align;
+  }
+  .margin-auto{
+    margin: $app-margin-auto;
+  }
+
+  .padding-20{
+    padding: $app-padding-20;
+  }
+
+  .padding-top{
+    padding-top: $app-padding-top-10;
+  }
+
+  .position-fixed{
+    position: $app-position-fixed;
+  }
+
+  .float-right{
+    float: $app-float-right;
+  }
+
+  .float-left{
+    float: $app-float-left;
+  }
+
+  /* ---------- Sizes ---------- */
+
+  .h-100{
+    height: $app-h-100-height;
+  }
+
+  /* ---------- Gradients ---------- */
+
+  .gradient-blue-1{
+    background: $app-gradient-blue-1-set-1;
+    background: $app-gradient-blue-1-bg-set-2;
+  }
+
+  .gradient-gray-1{
+    background: $app-gradient-gray-1-set-1;
+    background: $app-gradient-gray-1-set-2;
+  }
+
+  /* ---------- Colors ---------- */
+
+  .red{
+    color: $app-text-red-1;
+  }
+
+  /* ---------- Elements ---------- */
+
+  .circle{
+    border-radius: $app-circle-border-radius;
+  }
+
+  .image-circle-60{
+    width: $app-image-circle-60-width;
+    height: $app-image-circle-60-height;
+  }
+
+  .image-circle-90{
     width: $app-image-circle-90-width;
     height: $app-image-circle-90-height;
   }
+
+  img.right {
+    float: $app-float-right;
+    margin-left: $app-margin-left-20;
+    margin-right:$app-margin-right-0;
+  }
+
+  /* ----------// Messages //---------- */
+
+  .message {
+    width: 1180px;
+    background: $app-gradient-gray-1-set-1;
+    background: $app-gradient-gray-1-set-2;
+    padding: $app-padding-10;
+    margin: $app-margin-10 $app-margin-0;
+  }
+
+  .message::after {
+    content: "";
+    clear: $app-message-after-clear-both;
+    display: $app-message-after-display-table;
+  }
+
+  .message img {
+    float: $app-float-left;
+    max-width: $app-message-max-width;
+    width: $app-message-width-100-percent;
+    margin-right: $app-message-margin-right-20;
+    border-radius: $app-message-border-radius-50-percent;
+  }
+
+  .time-right {
+    float: $app-float-right;
+    color: $app-white-color;
+  }
+
+  .time-left {
+    float: $app-float-left;
+    color: $app-white-color;
+  }
+
+  input{
+    width: 1039px;
+  }
+
 }
