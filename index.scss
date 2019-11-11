@@ -24,30 +24,46 @@ $app-scroll-overflow: scroll;
 
 /* ---------- Margin & Padding ---------- */
 
-$app-margin-0: 0;
+/* Margin */
+
+$app-margin-top-0: 0;
+$app-margin-bottom-0: 0;
+$app-margin-left-0: 0;
+$app-margin-right-0: 0;
 $app-margin-auto: 0 auto;
 $app-margin-10: 10px;
+$app-margin-top-10: 10px;
 $app-margin-left-20: 20px;
 $app-margin-right-0: 0;
+
+/* Padding */
+
+$app-padding-top-0: 0;
+$app-padding-bottom-0: 0;
+$app-padding-left-0: 0;
+$app-padding-right-0: 0;
 $app-padding-top-10: 10px;
+$app-padding-bottom-10: 10px;
 $app-padding-10: 10px;
 $app-padding-20: 20px;
 
 /* ---------- Position ---------- */
 
-$app-float-left: left!important;
-$app-float-right: right!important;
-$app-absolute-position: absolute!important;
-$app-relative-position: relative!important;
+$app-float-left: left;
+$app-float-right: right;
+$app-absolute-position: absolute;
+$app-relative-position: relative;
 $app-fixed-position: fixed;
 $app-middle-align-self: center;
 $app-middle-align-content: center;
 $app-middle-text-align: center;
-$app-left-25-percent: 25%!important;
-$app-width-60-percent: 60%!important;
+$app-top-2-percent: 2%;
+$app-left-25-percent: 25%;
+$app-width-75-percent: 75%;
 
 /* ---------- Background ---------- */
 
+$app-noBg: none;
 $app-gradient-blue-1-set-1: rgb(43,39,116);
 $app-gradient-blue-1-set-2: linear-gradient(204deg, rgba(43,39,116,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 $app-gradient-gray-1-set-1: rgb(32,23,23);
@@ -56,10 +72,26 @@ $app-gradient-gray-1-set-2: linear-gradient(34deg, rgba(32,23,23,1) 0%, rgba(20,
 /* ---------- Text Color ---------- */
 
 $app-text-red-1: rgb(231,76,60);
+$app-text-blue-1: rgb(96, 163, 188);
+$app-text-blue-2: rgb(60, 141, 170);
 
 /* ---------- Border ---------- */
 
 $app-circle-border-radius: 100px;
+
+/* ---------- Animation ---------- */
+
+$app-anim-set-1: linear;
+$app-anim-set-2: cubic-bezier(0, 0, 1, 1);
+$app-anim-set-3: ease;
+$app-anim-set-4: cubic-bezier(0.25, 0.1, 0.25, 1);
+$app-anim-set-5: ease-in-out;
+$app-anim-set-6: cubic-bezier(0.42, 0, 0.58, 1);
+$app-anim-set-7: ease-in;
+$app-anim-set-8: cubic-bezier(0.42, 0, 1, 1);
+$app-anim-set-9: ease-out;
+$app-anim-set-10: cubic-bezier(0, 0, 0.58, 1);
+
 
 
 /* //---------- Customize Chatbot ----------// */
@@ -79,14 +111,6 @@ $app-circle-border-radius: 100px;
     margin: $app-margin-auto;
   }
 
-  .padding-20{
-    padding: $app-padding-20;
-  }
-
-  .padding-top{
-    padding-top: $app-padding-top-10;
-  }
-
   .float-right{
     float: $app-float-right;
   }
@@ -97,6 +121,12 @@ $app-circle-border-radius: 100px;
 
   .position-fixed{
     position: $app-fixed-position;
+  }
+
+  .position-fixed-bottom{
+    position: $app-fixed-position;
+    bottom: 10px;
+    width: 1110px;
   }
 
   .relative{
@@ -111,14 +141,30 @@ $app-circle-border-radius: 100px;
     overflow: $app-scroll-overflow;
   }
 
+  .padding-20{
+    padding: $app-padding-20;
+  }
+
+  .padding-top-10{
+    padding-top: $app-padding-top-10;
+  }
+
+  .margin-top-10{
+    padding-bottom: $app-margin-top-10!important;
+  }
+
+  .top-2{
+    margin-top: $app-top-2-percent;
+  }
+
   .left-25{
     margin-left: $app-left-25-percent;
   }
 
   /* ---------- Sizes ---------- */
 
-  .w-60p{
-    width: $app-width-60-percent;
+  .w-75p{
+    width: $app-width-75-percent;
   }
 
   .w-100p{
@@ -132,6 +178,10 @@ $app-circle-border-radius: 100px;
   /* ---------- Gradients ---------- */
 
   /* BACKGROUND */
+
+  .noBg{
+    background: $app-noBg;
+  }
 
   .gradient-blue-1{
     background: $app-gradient-blue-1-set-1;
@@ -151,7 +201,40 @@ $app-circle-border-radius: 100px;
     color: $app-text-red-1;
   }
 
+  .text-muted {
+    color: $app-text-blue-1!important;
+  }
+
+  .plane{
+    color: $app-text-blue-1!important;
+    &:hover{
+    color: $app-text-blue-2!important;
+    transition-timing-function: $app-anim-set-1;
+    transition-timing-function: $app-anim-set-2;
+    transform: translateX(15%);
+    transition: 0.5s;
+      &::before{
+        left:0;
+      }
+      &::after{
+        left:10px;
+      }
+    }
+  }
+
   /* ---------- Elements ---------- */
+
+  .container-fluid{
+    height: $app-h-100;
+  }
+
+  .form-control{
+    width: 740px!important;
+  }
+
+  .btn{
+    width: 90px!important;
+  }
 
   .circle{
     border-radius: $app-circle-border-radius;
