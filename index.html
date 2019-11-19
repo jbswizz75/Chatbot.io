@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="">
+<html>
     <head>
         <meta charset="utf-8">
         <title>Chatbot</title>
@@ -19,7 +19,7 @@
                                 <strong class="align-middle red">Lugia</strong>
                             </div>
                             <div class="col-4 margin-auto middle">
-                                <span class="badge badge-light align-middle circle">0</span>
+                                <span id="lugia" class="badge badge-light align-middle circle">0</span>
                             </div>
                         </div>
                     </div>
@@ -32,21 +32,20 @@
                                 <strong class="align-middle red">Draco</strong>
                             </div>
                             <div class="col-4 margin-auto middle">
-                                <span class="badge badge-light align-middle circle">0</span>
+                                <span id="draco" class="badge badge-light align-middle circle">0</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-9 padding-20 text-white relative float-right left-25 overflow-auto">
-                    <div id="output">
-                    </div>
+                <div class="col-9 padding-20 text-white relative float-right left-25 overflow-auto gradient-blue-1 h-100v2">
+                    <div id="output"></div>
                     <div class="container position-fixed-bottom margin-auto middle">
                         <div class="row">
                             <div class="col-8">
                                 <input id="input" type="text" class="form-control left-25" placeholder="Type your message here...">
                             </div>
                             <div class="col-4">
-                                <button type="button" id="send" class="btn btn-sm noBg plane left-25"><i class="fab fa-telegram-plane fa-2x"></i></button>
+                                <a id="send" class="btn btn-sm noBg plane left-25" href="#"><i class="fab fa-telegram-plane fa-2x"></i></a>
                             </div>
                         </div>
                     </div>
