@@ -1,7 +1,12 @@
 @charset "utf-8";
 
+#app{
+  overflow: hidden;
+}
+
 .tchat--content {
   position: relative;
+  overflow-x: hidden;
   overflow-y: scroll;
   height: 83vh;
   width: 100%;
